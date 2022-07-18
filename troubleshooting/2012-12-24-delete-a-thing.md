@@ -1,10 +1,13 @@
 ---
-chapter: errores
-title: authentic
-type: 'PUT'
-
-layout: post
+title: "Introducción"
+chapter: "errores" 
+sidebar: troubleshooting
 ---
+
+# Inicio
+
+Página inicial del manual de instalación
+
 
 This method allows the user to post a new thing to his stuff.
 
