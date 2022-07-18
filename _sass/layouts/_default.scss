@@ -84,6 +84,11 @@ pre.highlight
       left: $left_rail + 20;
       opacity: .2;
     }
+    .sg_post {
+        position: absolute;
+        left: $left_rail + 20;
+        opacity: .2;
+      }
   }
 }
 @media only screen and (max-width: $small_screen) {
@@ -103,6 +108,11 @@ pre.highlight
       position: absolute;
       left: $left_rail - 30;
       opacity: .2;
+    }
+    .sg_post {
+        position: absolute;
+        left: $left_rail - 30;
+        opacity: .2;
     }
   }
 }
