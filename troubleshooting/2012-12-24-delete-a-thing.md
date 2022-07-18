@@ -7,6 +7,12 @@ type: 'DELETE'
 layout: post
 ---
 
+
+title: authentication
+    chapter: errores
+  - title: authentic
+    chapter: errores 
+
 This method allows the user to post a new thing to his stuff.
 
 ### Request
