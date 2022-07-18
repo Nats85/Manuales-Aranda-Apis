@@ -124,24 +124,24 @@ pre.highlight
 }
 
 /* References */
-#contenido {
+.contenido {
   padding: 20px;
   padding-left: 260px;
   max-width: 700px;
 }
 
-#contenido .control {
+.contenido .control {
   cursor: pointer;
   font-size: 12px;
   margin-left: 15px;
 }
 
-#contenido article {
+.contenido article {
   clear: both;
   margin: 15px 0;
 }
 
-#contenido article > a {
+.contenido article > a {
   background: #333;
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -150,24 +150,24 @@ pre.highlight
   display: block;
   padding: 15px;
 }
-#contenido article > a:hover {
+.contenido article > a:hover {
   background: #222;
   text-decoration: none;
 }
 
-#contenido a h2 {
+.contenido a h2 {
   color: #fff;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
 }
 
-#contenido a h2 code {
+.contenido a h2 code {
   float: right;
   font-size: 14px;
 }
 
-#contenido a h2 code b {
+.contenido a h2 code b {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -177,52 +177,52 @@ pre.highlight
 }
 
 /* Default */
-#contenido article {
+.contenido article {
   border-color: #e2e7ea;
 }
 
-#contenido article a h2 code {
+.contenido article a h2 code {
   color: #657e8b;
 }
 
-#contenido article a h2 code b {
+.contenido article a h2 code b {
   background: #657e8b;
   text-transform: uppercase;
 }
 
 /* GET */
-#contenido article.GET a h2 code {
+.contenido article.GET a h2 code {
   color: #119bdf;
 }
 
-#contenido article.GET a h2 code b {
+.contenido article.GET a h2 code b {
   background: #119bdf;
 }
 
 /* POST */
-#contenido article.POST a h2 code {
+.contenido article.POST a h2 code {
   color: #52ce0e;
 }
 
-#contenido article.POST a h2 code b {
+.contenido article.POST a h2 code b {
   background: #52ce0e;
 }
 
 /* PUT */
-#contenido article.PUT a h2 code {
+.contenido article.PUT a h2 code {
   color: #e08f10;
 }
 
-#contenido article.PUT a h2 code b {
+.contenido article.PUT a h2 code b {
   background: #e08f10;
 }
 
 /* DELETE */
-#contenido article.DELETE a h2 code {
+.contenido article.DELETE a h2 code {
   color: #e02a10;
 }
 
-#contenido article.DELETE a h2 code b {
+.contenido article.DELETE a h2 code b {
   background: #e02a10;
 }
 
