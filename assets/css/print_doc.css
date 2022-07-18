@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Neusa Next';
+    src: url('../fonts/neusa/neusanextstd-bold-webfont.woff2') format('woff2'),
+        url('../fonts/neusa/neusanextstd-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neusa Next';
+    src: url('../fonts/neusa/neusanextstd-italic-webfont.woff2') format('woff2'),
+        url('../fonts/neusa/neusanextstd-italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neusa Next';
+    src: url('../fonts/neusa/neusanextstd-light-webfont.woff2') format('woff2'),
+        url('../fonts/neusa/neusanextstd-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neusa Next';
+    src: url('../fonts/neusa/neusanextstd-medium-webfont.woff2') format('woff2'),
+        url('../fonts/neusa/neusanextstd-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neusa Next';
+    src: url('../fonts/neusa/neusanextstd-regular-webfont.woff2') format('woff2'),
+        url('../fonts/neusa/neusanextstd-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neusa Next';
+    src: url('../fonts/neusa/neusanextstd-thin-webfont.woff2') format('woff2'),
+        url('../fonts/neusa/neusanextstd-thin-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+
+body {
+    background: #fff none !important;
+    margin: 30px 20px;
+}
+
+* {
+    font-family: "Neusa Next", sans-serif !important;
+}
+
+.title.header.typo_ostrich {
+    border-bottom: 1pt solid #666d73;
+    padding-bottom: 18px;
+    font-size: 30px;
+}
+
+main.sg-main {
+    font-family: sans-serif;
+    color: #666d73;
+    font-size: 15px;
+}
+
+.head {
+    font-size: 19px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    clear: both !important;
+    display: block !important;
+    float: none !important;
+    position: relative !important;
+}
+
+img {
+    margin: 30px auto;
+    display: block;
+    min-width: 45%;
+    max-width: 70%;
+    page-break-inside: avoid;
+}
+
+.sg_sidebar {
+    display: none;
+}
+
+.row.no-gutters {
+    display: none;
+}
+
+.sg_doc .sg_contain h1:after {
+    content: 'arrow_back';
+    display: none
+}
+
+
+
+h1 {
+    font-size: 30px;
+    page-break-before: always;
+}
+
+h2 {
+    margin-top: .7cm;
+}
+
+.TableGrid {
+    margin: 25px auto;
+    width: 90% !important;
+    margin-left: auto !important;
+    page-break-inside: avoid;
+}
+
+ul,
+ol,
+dd,
+p,
+hr {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
