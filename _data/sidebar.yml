@@ -19,7 +19,7 @@ docs:
     chapter: Uso
 
 
-Troubleshooting:
+troubleshooting:
   - title: authentication
     url:
   - title: errors
