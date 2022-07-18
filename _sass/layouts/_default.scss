@@ -121,7 +121,7 @@ pre.highlight
   @media only screen and (max-width: $large_screen) {
     left: -$left_rail;
   }
-}
+  
 .sg-main {
   padding: 0;
   width: 100%;
@@ -142,17 +142,3 @@ pre.highlight
  
  }
 }  
- .sg_post {
-  max-width: 70rem;
-  margin: 0 auto;
-  padding: 0 $right_rail 0 $left_rail + 12;
-  background: #f9fafb;
-
-  @media only screen and (max-width: $extended_screen) {
-    max-width: 52rem;
-    padding: 0 0 0 $left_rail + 20;
-  }
-  @media only screen and (max-width: $large_screen) {
-    padding: 0;
-  } 
-}
