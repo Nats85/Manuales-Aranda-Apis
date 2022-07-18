@@ -1,41 +1,26 @@
 ---
-chapter: errores
-title: authentication
-type: 'PUT'
-
-layout: post
+title: "Errores"
+chapter: "errores" 
+sidebar: troubleshooting
 ---
 
-    
-    
 
-This method allows the user to retrieve his stuff.
+This method allows the user to post a new thing to his stuff.
 
 ### Request
 
-* **`:id`** is the id the thing to update.
+* **`:id`** is the id the thing to delete.
 * The headers must include a **valid authentication token**.
-* **The body can't be empty** and must include at least the name attribute, a `string` that will be used as the name of the thing.
-
-```Authentication: bearer f862f658-ad89-4fcb-995b-7a4c50554ff6```
-```{
-    name: 'My new thing'
-}```
+* **The body is omitted**.
 
 ### Response
 
 Sends back a collection of things.
 
-```Status: 200 OK```
+```Status: 200 Deleted```
 ```{
-    {
-        id: thing_1,
-        name: 'My first thing'
-    },
-    {
-        id: thing_2,
-        name: 'My second thing'
-    }
+    code: 200,
+    message: 'Your thing (id: 736) was deleted'
 }```
 
 For errors responses, see the [response status codes documentation](#response-status-codes).
