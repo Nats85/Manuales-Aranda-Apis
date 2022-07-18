@@ -20,5 +20,7 @@ docs:
 
 
 Troubleshooting:
-  - title: Troubleshooting
+  - title: authentication
     url:
+  - title: errors
+    url:   
