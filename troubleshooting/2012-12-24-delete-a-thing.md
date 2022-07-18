@@ -1,7 +1,7 @@
 ---
 title: "Introducción"
 chapter: "errores"
-layout: post
+layout: null
 ---
 
 # Inicio
