@@ -3,6 +3,9 @@
 ## Theme Settings
 ## ==============
 
+## Jekyll Theme
+remote_theme    : "aranda-docs/aranda-jekyll-theme"
+
 ## Settings used when generating the website
 title           : Aranda Jekyll Theme
 author          : Aranda Software
@@ -29,7 +32,7 @@ favicon         : /assets/branding/favicon.ico
 
 ## Output
 url             :                ## Optional
-baseurl         : /aranda-jekyll-theme
+baseurl         : /Manuales-Aranda-Apis
 destination     : _site          ## Output folder
 
 ## Collection Settings

@@ -17,3 +17,10 @@ docs:
     chapter: Instalación
   - title: Uso
     chapter: Uso
+
+
+Troubleshooting:
+  - title: authentication
+    url:
+  - title: errors
+    url:   
