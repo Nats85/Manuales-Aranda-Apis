@@ -21,6 +21,6 @@ docs:
 
 troubleshooting:
   - title: authentication
-    url:
-  - title: errors
-    url:   
+    chapter: errores
+  - title: authentic
+    chapter: errores  
