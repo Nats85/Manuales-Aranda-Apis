@@ -2,7 +2,6 @@
 title: Troubleshooting
 info: Prueba.
 sidebar: troubleshooting
-layout: post
 ---
 
 
