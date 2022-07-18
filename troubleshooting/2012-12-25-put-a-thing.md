@@ -1,7 +1,7 @@
 ---
 title: "Errores"
-chapter: "errores" 
-sidebar: troubleshooting
+chapter: "errores"
+layout: doc
 ---
 
 
