@@ -1,7 +1,7 @@
 ---
-title: "Introducción"
-chapter: "errores"
-layout: post
+title: Errores
+chapter: errores
+layout: default
 ---
 
 # Inicio
