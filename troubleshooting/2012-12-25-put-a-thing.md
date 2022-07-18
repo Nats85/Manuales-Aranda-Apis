@@ -1,11 +1,13 @@
 ---
-category: Stuff
-url_path: '/stuff/:id'
-title: 'Update a thing'
+chapter: errores
+title: authentication
 type: 'PUT'
 
-layout: null
+layout: post
 ---
+
+    
+    
 
 This method allows the user to retrieve his stuff.
 
