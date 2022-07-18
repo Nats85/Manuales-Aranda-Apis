@@ -17,10 +17,3 @@ docs:
     chapter: Instalación
   - title: Uso
     chapter: Uso
-
-
-troubleshooting:
-  - title: Errores
-    chapter: errores
-  - title: Introducción
-    chapter: errores  
