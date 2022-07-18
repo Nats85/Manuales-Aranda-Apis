@@ -4,7 +4,7 @@ info: Prueba
 ---
 
 <nav id='sidebar'>
-	{% include nav.html %}
+	{% include sidebar.html %}
 </nav>
 
 <section id='contenido'>
