@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting
-info: Prueba.
-sidebar: troubleshooting
+info: Prueba
 ---
 
 <nav id='sidebar'>
