@@ -4,6 +4,9 @@ info: Prueba.
 sidebar: troubleshooting
 ---
 
+<nav id='sidebar'>
+	{% include nav.html %}
+</nav>
 
 <section id='contenido'>
 {% for post in site.posts %}
