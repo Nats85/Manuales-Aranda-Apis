@@ -1,17 +1,10 @@
 ---
-category: Stuff
-url_path: '/stuff/:id'
-title: 'Delete a thing'
-type: 'DELETE'
+chapter: errores
+title: authentic
+type: 'PUT'
 
 layout: post
 ---
-
-
-title: authentication
-    chapter: errores
-  - title: authentic
-    chapter: errores 
 
 This method allows the user to post a new thing to his stuff.
 
