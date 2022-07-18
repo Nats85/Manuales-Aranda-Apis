@@ -1,7 +1,7 @@
 ---
 title: "Introducción"
-chapter: "errores" 
-sidebar: troubleshooting
+chapter: "errores"
+layout: doc
 ---
 
 # Inicio
