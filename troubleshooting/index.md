@@ -1,10 +1,10 @@
 ---
+title: Troubleshooting
+info: Prueba.
+sidebar: troubleshooting
 layout: post
 ---
 
-<nav id='sidebar'>
-	{% include sidebar.html %}
-</nav>
 
 <section id='content'>
 {% for post in site.posts %}
