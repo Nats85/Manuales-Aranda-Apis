@@ -17,3 +17,8 @@ docs:
     chapter: Instalación
   - title: Uso
     chapter: Uso
+
+
+Troubleshooting:
+  - title: Troubleshooting
+    url:
