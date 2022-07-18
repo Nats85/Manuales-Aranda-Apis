@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting
 info: Troubleshooting Aranda.
-permalink: /troubleshooting/
 sidebar: troubleshooting
 ---
 
