@@ -4,7 +4,7 @@ url_path: '/stuff/:id'
 title: 'Delete a thing'
 type: 'DELETE'
 
-layout: null
+layout: post
 ---
 
 This method allows the user to post a new thing to his stuff.
