@@ -3,6 +3,9 @@
 ## Theme Settings
 ## ==============
 
+## Jekyll Theme
+remote_theme    : "aranda-docs/aranda-jekyll-theme"
+
 ## Settings used when generating the website
 title           : Aranda Jekyll Theme
 author          : Aranda Software
