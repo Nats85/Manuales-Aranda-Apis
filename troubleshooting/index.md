@@ -4,7 +4,7 @@ info: Troubleshooting Aranda.
 sidebar: troubleshooting
 ---
 
-<section id='content'>
+<section id='contenido'>
 {% for post in site.posts %}
   <article class='{{ post.type }}'>
     <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.url_path }}</code> {% endif %}{{ post.title }}</h2></a>
