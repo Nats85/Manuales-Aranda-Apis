@@ -166,7 +166,7 @@ pre.highlight
     align-items: baseline;
     color: #576574;
     padding: 10px 16px;
-    background-color: #fcfcfc;
+  
 }  
   .apis h2 {
     color: #576574;
@@ -186,6 +186,11 @@ pre.highlight
     color: #576574;
   
 }
+.highlight code:before {
+    display: none;
+}
+
+
 #contenido .body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
