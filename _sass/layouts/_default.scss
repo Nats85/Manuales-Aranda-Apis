@@ -163,7 +163,39 @@ pre.highlight
     margin: 1.5rem 0;
 
 }
+------------
 
+.apis {
+    align-items: baseline;
+}
+
+.ap {
+    font-weight: 300;
+    border-radius: 2px;
+    color: currentColor;
+ 
+}
+
+.apis ul {
+    padding-bottom: 96px;
+}
+
+.apis h2 {
+    color: #576574;
+    border-left: 4px solid #ff6d6d;
+    font-weight: 500;
+    padding: 10px 16px;
+    background-color: #fcfcfc;
+  
+}  
+
+ .apis hr {
+    border-top: 0;
+    border-bottom: 2px solid #f5f5f5;
+    margin: 1.5rem 0;
+
+}
+------------
 #contenido .body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
