@@ -136,6 +136,9 @@ pre.highlight
 
 .post {
     align-items: baseline;
+    border-top: 0;
+    border-bottom: 2px solid #598dda;
+    margin: 1.5rem 0;
 }
 
 .ts {
@@ -155,13 +158,6 @@ pre.highlight
     font-weight: 500;
     padding: 10px 16px;
     background-color: #fcfcfc;
-  
-}  
-
- .post hr {
-    border-top: 0;
-    border-bottom: 2px solid #f5f5f5;
-    margin: 1.5rem 0;
 
 }
 
