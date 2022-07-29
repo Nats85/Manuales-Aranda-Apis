@@ -136,9 +136,11 @@ pre.highlight
 
 .post {
     align-items: baseline;
-    border-top: 0;
-    border-bottom: 2px solid #598dda;
-    margin: 1.5rem 0;
+    color: #576574;
+    border-left: 4px solid #ff6d6d;
+    font-weight: 500;
+    padding: 10px 16px;
+    background-color: #fcfcfc;
 }
 
 .ts {
@@ -163,33 +165,15 @@ pre.highlight
 
 .apis {
     align-items: baseline;
-}
-
-.ap {
-    font-weight: 300;
-    border-radius: 2px;
-    color: currentColor;
+    border-top: 0;
+    border-left: 5px solid #598dda;
+    margin: 1.5rem 0;
  
 }
 
 .apis ul {
     padding-bottom: 96px;
-}
-
-.apis h2 {
-    color: #576574;
-    border-left: 4px solid #ff6d6d;
-    font-weight: 500;
-    padding: 10px 16px;
-    background-color: #fcfcfc;
   
-}  
-
- .apis hr {
-    border-top: 0;
-    border-bottom: 2px solid #f5f5f5;
-    margin: 1.5rem 0;
-
 }
 #contenido .body {
   -moz-box-sizing: border-box;
