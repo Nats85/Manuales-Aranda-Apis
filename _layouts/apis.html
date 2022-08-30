@@ -13,14 +13,15 @@ layout: default
     </aside>{% endif %}
   </div>
 </header>
-{% include sidebar.html %}
 
 <post id="documentationArea" class="sg_doc">
   <div class="sg_post" id="post-content">
     <div class="apis">
        <div class="ap">
+        {% include alert_instaladores.html %}
         {{ content }}
        </div>
     </div>  
   </div>
 </post>
+
