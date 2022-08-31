@@ -12,7 +12,8 @@ layout: default
       <ul></ul>
     </aside>{% endif %}
   </div>
-  {% include alert_instaladores.html %}
+  <div class="icon"><img src="{{ site.baseurl }}/assets/images/ic_alert.svg"></div>
+                {{ site.data.messages['instaladores'] }}
 </header>
 
 <post id="documentationArea" class="sg_doc">
