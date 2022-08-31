@@ -148,26 +148,26 @@ pre.highlight
     border-radius: 2px;
     color: currentColor;
  
-}
+ }
 
-.post ul {
+  .post ul {
     padding-bottom: 96px;
-}
+ }
 
-.post h2 {
+  .post h2 {
     color: #576574;
     font-weight: 500;
     padding: 10px 16px;
     background-color: #fcfcfc;
 
-}
+  }
 
-.apis {
+  .apis {
     align-items: baseline;
     color: #576574;
     padding: 10px 16px;
   
-}  
+  }  
   .apis h2 {
     color: #576574;
     font-weight: 500;
@@ -176,15 +176,13 @@ pre.highlight
     background-color: #fcfcfc;
     margin-bottom: 36px;
     
- }  
+  }  
   .apis th {
     color: #576574;
-
     
- }  
+}  
   .apis td {
     color: #576574;
-  
 
 }
 .instal p {
@@ -248,7 +246,6 @@ pre.highlight
 .highlight code:before {
     display: none;
 }
-
 
 #contenido .body {
   -moz-box-sizing: border-box;
