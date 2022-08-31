@@ -201,8 +201,9 @@ pre.highlight
     border-radius: 4px;
  }  
 .alert {
-    padding-top: 24px;
+    padding-top: 35px;
     padding-left: 28px;
+    display: -webkit-box;
  }
    
 .highlight code:before {
