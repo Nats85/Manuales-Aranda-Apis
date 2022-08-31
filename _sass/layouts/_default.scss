@@ -186,6 +186,26 @@ pre.highlight
     color: #576574;
   
 }
+.alert {
+    top: 164px;
+    left: 371px;
+    height: 103px;
+    background: #F57171 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 0.12;
+  }
+
+.alert th {
+ top: 211px;
+left: 458px;
+height: 16px;
+text-align: left;
+letter-spacing: 0px;
+color: #F57171;
+opacity: 1;
+
+ }  
+ 
 .highlight code:before {
     display: none;
 }
