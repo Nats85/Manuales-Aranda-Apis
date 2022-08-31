@@ -6,15 +6,16 @@ layout: default
     <div class="head">
       <div class="title header typo_ostrich">{{ page.title }}</div>
       {% if page.info %}<div class="sub_title typo_crow">{{ page.info }}</div>{% endif %}
+      <div class="alert"><img src="{{ site.baseurl }}/assets/images/ic_alert.svg">
+                {{ site.data.messages['instaladores'] }}
+       </div>
     </div>
     {% if page.nav == true %}<aside id="nav">
       <div class="header typo_hummingbird">Contents</div>
       <ul></ul>
     </aside>{% endif %}
   </div>
-       <div class="alert"><img src="{{ site.baseurl }}/assets/images/ic_alert.svg">
-                {{ site.data.messages['instaladores'] }}
-       </div>
+       
 </header>
 
 <post id="documentationArea" class="sg_doc">
