@@ -6,9 +6,6 @@ layout: default
     <div class="head">
       <div class="title header typo_ostrich">{{ page.title }}</div>
       {% if page.info %}<div class="sub_title typo_crow">{{ page.info }}</div>{% endif %}
-      <div class="alert"><img src="{{ site.baseurl }}/assets/images/ic_alert.svg">
-                {{ site.data.messages['instaladores'] }}
-       </div>
     </div>
     {% if page.nav == true %}<aside id="nav">
       <div class="header typo_hummingbird">Contents</div>
@@ -22,7 +19,10 @@ layout: default
   <div class="sg_post" id="post-content">
     <div class="apis">
        <div class="ap">
-        {{ content }}
+          <div class="alert"><img src="{{ site.baseurl }}/assets/images/ic_alert.svg">
+                {{ site.data.messages['instaladores'] }}
+           </div>
+           {{ content }}
        </div>
     </div>  
   </div>
