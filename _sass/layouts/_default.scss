@@ -255,6 +255,9 @@ pre.highlight
     padding-left: 28px;
     display: -webkit-box;
  }
+.notes {
+    display: inline-block;
+}
 .notes h1 {
     font-size: 13px;
     color: #f57171;
@@ -272,9 +275,14 @@ pre.highlight
   }
   .note-icon {
     padding-left: 30px;
-    padding-top: 27px;
-    color: #f57171;   
+    padding-top: 13px;
+    color: #f57171;
+    display: flex;
+ }
+  .note-icon h2 {
+    margin-left: 14px;
 }
+
    
 .highlight code:before {
     display: none;
