@@ -81,6 +81,15 @@ h2 {
     width: 90% !important;
     margin-left: auto !important;
     page-break-inside: avoid;
+    padding-inline-end: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    background: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .th {
