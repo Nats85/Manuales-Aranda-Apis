@@ -9,8 +9,11 @@
 
 body {
     background: #fff none !important;
-    
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
 }
+    
 
 * {
     font-family: "Lederman", sans-serif !important;
@@ -64,7 +67,7 @@ img {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     page-break-before: always;
 }
 
@@ -90,9 +93,6 @@ hr {
     margin-bottom: 1rem;
     text-align: justify;
     color: #666d73;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
 }
 
 div.saltopagina {
