@@ -13,12 +13,13 @@ body {
 
 * {
     font-family: "Lederman", sans-serif !important;
+  
 }
 
 .title.header.typo_ostrich {
     border-bottom: 1pt solid #666d73;
     padding-bottom: 18px;
-    font-size: 30px;
+    
 }
 
 main.sg-main {
@@ -28,9 +29,10 @@ main.sg-main {
 }
 
 .head {
-    font-size: 19px;
+    font-size: 30px;
     font-weight: 800;
     font-family: sans-serif;
+    page-break-before: always;
 }
 
 #wrapper {
@@ -68,6 +70,9 @@ h1 {
 
 h2 {
     margin-top: 0.7cm;
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: underline;
 }
 
 .TableGrid {
@@ -85,4 +90,12 @@ hr {
     margin: 0;
     margin-bottom: 1rem;
     text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+div.saltopagina {
+    display: block;
+    page-break-before: always;
 }
