@@ -18,10 +18,10 @@ body#sg {
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
-  -moz-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
-  -ms-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
-  font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
+  -ms-font-feature-settings: normal;
+  font-feature-settings: normal;
   -webkit-font-smoothing: antialiased;
 }
 .sg-pusher {
@@ -193,7 +193,6 @@ pre.highlight
 .instal p {
     color: #999999;
     font-size: 14px;
-    font-weight: 300;
 } 
 
 .instal blockquote {
@@ -247,8 +246,7 @@ pre.highlight
     margin-top: 8px;
 } 
 .content_alert {
-    background: #f5717121;
-    border-radius: 4px;
+    border-bottom: 1px solid #feeded;
  }  
 .alert {
     padding-top: 35px;
@@ -261,7 +259,7 @@ pre.highlight
 .notes h1 {
     font-size: 13px;
     color: #f57171;
-    margin-left: 79px;
+    margin-left: 31px;
     margin-right: 22px;
     margin-bottom: 14px; 
  
@@ -269,16 +267,21 @@ pre.highlight
 .notes li {
     font-size: 13px;
     color: #f57171;
-    margin-left: 79px;
+    margin-left: 31px;
     margin-right: 22px;
     margin-bottom: 14px;
     display: block;
+    margin-top: 17px;
+    
   }
   .note-icon {
     padding-left: 30px;
     padding-top: 13px;
     color: #f57171;
     display: flex;
+    background: #f5717121;
+    border-radius: 4px;
+    padding-bottom: 13px;
  }
   .note-icon h2 {
     margin-left: 14px;

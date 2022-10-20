@@ -48,9 +48,6 @@ function collapseH() {
   $('#documentationArea h1').click(function () {
     $(this).toggleClass('collapsed');
     $(this).nextUntil('h1').slideToggle();
-    //    $('html, body').animate({
-    //        scrollTop: $(this).offset().top
-    //    }, 500);
   });
 }
 
@@ -86,32 +83,6 @@ function maturityCount() {
   }
 }
 
-//-- Workaround for html2canvas blank image
-function fnIgnoreElements(el) {
-  if (typeof el.shadowRoot == 'object' && el.shadowRoot !== null) return true
-}
-
-//-- Download manual to PDF
-const downloadManual = async () => {
-  const loc = window.location.href.split('/')[3]
-  var printWindow = window.open(`/${loc}/pdf.html`, 'Print', "width=" + screen.availWidth + ",height=" + screen.availHeight + ' toolbar=0, resizable=0');
-
-  printWindow.addEventListener('load', function () {
-    if (Boolean(printWindow.chrome)) {
-      printWindow.print();
-      setTimeout(function () {
-        printWindow.close();
-      }, 500);
-    } else {
-      printWindow.print();
-      printWindow.close();
-    }
-  }, true);
-}
-
-//-- Getting form control and html container
-const searchInput = document.querySelector('#formulario');
-const resultBox = document.querySelector('#result-box');
 //-- Scroll to result once per search
 let scrollTimes = 0;
 
@@ -119,52 +90,8 @@ let scrollTimes = 0;
 let prev = document.getElementById("article-content").innerHTML.toString();
 let keyWordResult = [];
 //-- Set other article results in the result box
-const setOtherResults = (search) => {
-  const results = search.length > 0 ? searchBar(search) : [];
-  if (search.length > 0 && results.map(result => ResultItem(result)).length > 0) {
-    const cleanUpResults = results.map(result => ResultItem(result))
-      .toString()
-      .replace(/,/g, '');
-    keyWordResult = cleanUpResults;
-    resultBox.innerHTML = `<p class="item-title" id="expand-results">clic aquí para más resultados con la busqueda '${search}'</p>`;
-    //-- Expand results
-    $('#expand-results').click(() => {
-      $('#result-box')
-        .animate({ maxHeight: '300px' }, 200,
-          () => resultBox.innerHTML = keyWordResult);
-      $('.demo-item').addClass('show_tooltip');
-    });
-  } else if (search.length === 0) {
-    resultBox.innerHTML = [];
-  } else {
-    resultBox.innerHTML = `<p class="item-title">No hay resultados addicionales para la busqueda '${search}'</p>`;
-  }
-}
+
 //-- Highlight words find in the current document and engage the result box
-const setResults = (evt) => {
-  try {
-    const search = evt.target.value.toString();
-    //-- Engage result box
-    setOtherResults(search);
-    //-- Highlight word engine
-    let article = document.getElementById("article-content").innerHTML.toString();
-    if (article.match(/mark/gi)) {
-      article = prev;
-    }
-    if (search.length >= 3) {
-      const pattern = new RegExp("(" + search + ")", "gi");
-      const new_text = article.replace(pattern, "<mark>" + search + "</mark>");
-      document.getElementById("article-content").innerHTML = new_text;
-      scrollTimes = 0;
-
-    } else {
-      document.getElementById("article-content").innerHTML = prev;
-    }
-  } catch (error) {
-    console.log(error);
-  }
-
-}
 
 const ifHighlightedWord = () => {
   const yellowHighlighter = document.querySelector('mark');
@@ -181,7 +108,7 @@ setInterval(ifHighlightedWord, 1000);
 //-- Activating download tooltip
 const tooltip = document.querySelector('#tooltip');
 const searchButton = document.querySelector('#pdf-ic');
-const convertPDF = document.querySelector('#convertPDF');
+
 
 //-- Show Tooltip
 const showTooltip = (evt) => {
@@ -198,10 +125,8 @@ const hideTooltip = (evt) => {
 //-- Binding events
 searchButton.onmouseover = showTooltip;
 searchButton.onmouseout = hideTooltip;
-convertPDF.onclick = downloadManual;
 
 //-- Adding listener and triggering  render function when key is up.
-searchInput.onkeyup = setResults;
 
 //Functions that run when all HTML is loaded
 $(document).ready(function () {
