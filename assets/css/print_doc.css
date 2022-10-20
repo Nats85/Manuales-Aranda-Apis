@@ -77,12 +77,29 @@ h2 {
     color: #666d73;
 }
 
-.TableGrid {
-    margin: 25px auto;
-    width: 90% !important;
-    margin-left: auto !important;
-    page-break-inside: avoid;
-    
+.table th {
+    padding-inline-end: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #e9edef;
+    background: #f8f8fa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+} 
+.table td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 0px solid #ffffff;
+        background: #dcdfe36b;
+        color: #535659;
+        font-size: 0.9rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 30px;
 }
 
 ul,
