@@ -8,7 +8,6 @@
 
 body {
     background: #fff none !important;
-    margin: 30px 20px;
 }
 
 * {
@@ -24,8 +23,8 @@ body {
 
 main.sg-main {
     font-family: sans-serif;
-    color: #666d73;
     font-size: 15px;
+    margin-left: 20px;
 }
 
 .head {
@@ -73,6 +72,7 @@ h2 {
     margin-left: 20px;
     font-size: 16px;
     text-decoration: underline;
+    color: #666d73;
 }
 
 .TableGrid {
@@ -93,6 +93,7 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 30px;
+    color: #666d73;
 }
 
 div.saltopagina {
