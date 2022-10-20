@@ -9,9 +9,7 @@
 
 body {
     background: #fff none !important;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 30px;
+    
 }
 
 * {
@@ -92,6 +90,9 @@ hr {
     margin-bottom: 1rem;
     text-align: justify;
     color: #666d73;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 
 div.saltopagina {
