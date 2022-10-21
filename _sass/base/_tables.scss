@@ -52,28 +52,3 @@ td {
     padding-right: 30px;
     border-top: 1px solid #e0e0e0;
 }
-
-.print th {
-  padding-inline-end: 100px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border: 1px solid #e9edef;
-  background: #f8f8fa;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-
-} 
-.print td {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      border: 0px solid #ffffff;
-      background: #dcdfe36b;
-      color: #535659;
-      font-size: 0.9rem;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 30px;
-}
