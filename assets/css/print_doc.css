@@ -7,14 +7,13 @@
     font-style: normal;
 }
 @page:blank {
-    @top-center {
       content: 'Esta es una página en blanco';
       /*otras declaraciones*/
-     }
+     
   }
 @page:left {
     @bottom-left {
-      content: counter(pagina);
+      content: counter(1);
      }
 }  
 
