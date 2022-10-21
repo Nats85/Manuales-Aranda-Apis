@@ -12,6 +12,11 @@
       /*otras declaraciones*/
      }
   }
+@page:left {
+    @bottom-left {
+      content: counter(pagina);
+     }
+}  
 
 body {
     background: #fff none !important;
