@@ -1,3 +1,5 @@
+//code for https://spdevuk.com/blogs/how-to-add-a-copy-button-to-markdown-code-using-javascript
+
 const copyToClipboard = str => {
   const el = document.createElement('textarea'); // Create a <textarea> element
   el.value = str; // Set its value to the string that you want copied
@@ -28,6 +30,8 @@ function handleCopyClick(evt) {
 
   // copy all of the code to the clipboard
   copyToClipboard(innerText);
+  // alert to show it worked, but you can put any kind of tooltip/popup
+  alert(innerText);
 }
 
 // get the list of all highlight code blocks
