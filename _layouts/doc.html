@@ -62,10 +62,7 @@ layout: default
 </header>
 
 <article id="documentationArea" class="sg_doc">
-    <div class="sg_contain" id="article-content">{{ content }}</div>
-</article>
-
-<script>
+   
     // get the list of all highlight code blocks
 const highlights = document.querySelectorAll("div.highlight")
 
@@ -78,7 +75,11 @@ highlights.forEach(div => {
   // append the copy button to each code block
   div.append(copy)
 })
-    document.getElementById("searchbar").addEventListener("keyup", () => {
+    <div class="sg_contain" id="article-content">{{ content }}</div>
+</article>
+
+<script>
+   document.getElementById("searchbar").addEventListener("keyup", () => {
         let searched = document.getElementById("searchbar").value;
         let emptyList = document.getElementById("search_result");
         let articles = [];
