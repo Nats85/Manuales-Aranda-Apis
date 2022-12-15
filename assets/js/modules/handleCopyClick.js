@@ -26,6 +26,8 @@ function handleCopyClick(evt) {
   // destructure the innerText from the code block
   const { innerText } = Array.from(children)[0];
 
+  // copy all of the code to the clipboard
+  copyToClipboard(innerText);
 }
 
 // get the list of all highlight code blocks
