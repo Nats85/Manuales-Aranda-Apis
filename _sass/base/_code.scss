@@ -1,4 +1,35 @@
 div.highlight button {
+  color: #adb5bd;
+  box-sizing: border-box;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0.15rem;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*  these styles below can be ignored, just used to make it look slightly prettier */
+
+body {
+ font-family: Menlo,Consolas,"Courier New",Courier,"Liberation Mono",monospace;
+    font-size: .875rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+div.highlight {
   width: 100%;
   position: relative;
   border-radius: 0.2rem;
@@ -9,30 +40,8 @@ div.highlight button {
   box-sizing: border-box;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-}
-
-body {
-  background: #222;
- font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-div.highlight {
-  width: 100%;
-  max-width: 400px;
-  position: relative;
-  border-radius: 0.2rem;
-  padding: 10px;
-  margin: 1.5rem 0;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-}
-
 .highlight pre {
-  background: #232020;
+  background: #282c34;
 }
 
 pre.highlight {
@@ -46,14 +55,6 @@ pre.highlight {
 
 /* atom one dark css for code blocks */
 
-.highlight,
-pre.highlight {
-  background: #282c34;
-  color: #abb2bf;
-}
-.highlight pre {
-  background: #282c34;
-}
 .highlight .hll {
   background: #282c34;
 }
