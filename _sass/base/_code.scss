@@ -1,26 +1,18 @@
 div.highlight button {
-  color: #adb5bd;
+  width: 100%;
+  position: relative;
+  border-radius: 0.2rem;
+  padding: 22px;
+  margin: 1.5rem 0;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%);
+  border: 1px solid rgba(0,0,0,0.25);
   box-sizing: border-box;
-  transition: 0.2s ease-out;
-  cursor: pointer;
-  user-select: none;
-  background: rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0);
-  padding: 5px 10px;
-  font-size: 0.8em;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 0 0.15rem;
 }
 
 .centered {
   display: flex;
   justify-content: center;
 }
-
-
-/*  these styles below can be ignored, just used to make it look slightly prettier */
 
 body {
   background: #222;
@@ -40,7 +32,7 @@ div.highlight {
 }
 
 .highlight pre {
-  background: #282c34;
+  background: #232020;;
 }
 
 pre.highlight {
@@ -48,8 +40,8 @@ pre.highlight {
 }
 
 .highlight, pre.highlight {
-  background: #282c34;
-  color: #abb2bf;
+  background: #091f3e;;
+  color: #0865C8;
 }
 
 /* atom one dark css for code blocks */
