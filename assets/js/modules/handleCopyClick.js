@@ -1,5 +1,3 @@
-//code for https://spdevuk.com/blogs/how-to-add-a-copy-button-to-markdown-code-using-javascript
-
 const copyToClipboard = str => {
   const el = document.createElement('textarea'); // Create a <textarea> element
   el.value = str; // Set its value to the string that you want copied
