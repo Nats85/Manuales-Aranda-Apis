@@ -1,3 +1,5 @@
+// Plugin: https://codepen.io/badurski/pen/RJvJQZ
+
 const q1 = new poll("Will Poland win the footboal match?", {
 	0: { title: "Yes" },
 	1: { title: "No" }
