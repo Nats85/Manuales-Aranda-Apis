@@ -62,26 +62,11 @@ layout: default
 </header>
 
 <article id="documentationArea" class="sg_doc">
-  
     <div class="sg_contain" id="article-content">{{ content }}</div>
 </article>
 
- <!--Vote Count-->
- .<div class="wrapper">
-    <div class="poll-box">
-      <div class="poll-container">
-        <div class="poll-question">Will Poland win the footboal match?</div>
-        <div class="poll-panel row mt-30">
-          <div class="btn poll-panel-btn" aria-role="button" data-result="0" data-vote="0"> <span>Yes</span></div>
-          <div class="btn poll-panel-btn" aria-role="button" data-result="0" data-vote="1"> <span>No</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 <script>
-   document.getElementById("searchbar").addEventListener("keyup", () => {
+    /*  document.getElementById("searchbar").addEventListener("keyup", () => {
         let searched = document.getElementById("searchbar").value;
         let emptyList = document.getElementById("search_result");
         let articles = [];
@@ -109,5 +94,5 @@ layout: default
             completeList = "";
         }
         emptyList.innerHTML = completeList;
-    });
+    }); */
 </script>
