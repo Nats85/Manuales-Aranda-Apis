@@ -68,6 +68,16 @@ function handleCopyClick(evt) {
   // alert to show it worked, but you can put any kind of tooltip/popup to notify it worked
   alert(innerText)
 }
+// Vote Count
+function liked(heart){
+  heart.classList.toggle("liked");
+  if (heart.liked) {
+      click ++;
+  } else {
+      click --;
+  }
+  document.getElementById('clicks').innerHTML = click;
+} 
 
 // Sidebar Button
 function sidebarButton() {
