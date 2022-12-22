@@ -69,7 +69,6 @@ function handleCopyClick(evt) {
   alert(innerText)
 }
 
-
 // Sidebar Button
 function sidebarButton() {
   var $button = $('.sg_sidebar_button');
