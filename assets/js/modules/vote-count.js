@@ -1,31 +1,37 @@
-// Plugin: https://codepen.io/badurski/pen/RJvJQZ
-
-const q1 = new poll("Will Poland win the footboal match?", {
-	0: { title: "Yes" },
-	1: { title: "No" }
-});
-
-// Add some randome votes
-for (let i = 0; i < 20; i++) {
-	q1.vote(Math.floor(Math.random() * (1 - 0 + 1)) + 0);
+let like_flag = false;
+let dislike_flag = false;
+function liked(event) {
+  let counter = parseFloat(document.getElementById('counter').innerHTML);
+  var button = event.target.innerText;
+  switch(button){
+  	case 'like':
+    	if (like_flag==false && dislike_flag==false) {
+        counter++;
+        like_flag=true;
+      } else if (like_flag==false && dislike_flag==true) {
+        counter = counter + 2;
+        like_flag=true;
+        dislike_flag=false;
+      } else {
+      	counter--;
+        like_flag=false;
+      }
+    break;
+    case 'dislike':
+    	if (dislike_flag==false && like_flag==false) {
+        counter--;
+        dislike_flag=true;
+      } else if (dislike_flag==false && like_flag==true) {
+        counter = counter - 2;
+        dislike_flag=true;
+        like_flag=false;
+      } else {
+      	counter++;
+        dislike_flag=false;
+      }
+    break;
+  }
+  console.log('the button '+button+' was pressed');
+  
+  document.getElementById('counter').innerHTML = counter;
 }
-
-// Poll interface script
-let pollButtons = document.querySelectorAll(".poll-panel-btn"),
-	pollPanel = document.querySelector(".poll-panel");
-pollButtons.forEach((button) => {
-	button.onclick = () => {
-		if (button.getAttribute("disabled") != "disabled") {
-			q1.vote(button.dataset.vote);
-			pollPanel.classList.add("poll-voted");
-			button.classList.add("--user-choice");
-			pollButtons.forEach((b) => {
-				b.setAttribute("disabled", "disabled");
-				let percent = q1.results[b.dataset.vote].percent + "%";
-				b.style.width = percent;
-				b.dataset.result = percent;
-			});
-		}
-	};
-});
-
