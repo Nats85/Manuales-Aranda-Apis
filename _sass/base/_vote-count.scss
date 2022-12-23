@@ -7,7 +7,6 @@
     }
     
     .vote-container {
-     
         display: flex;
         margin-bottom: 36px;
         border-radius: 4px;
@@ -16,7 +15,6 @@
     }
     
     .like {
-
         color: #000;
         cursor: pointer;
         background: #f6f6f6;
@@ -25,7 +23,6 @@
     }
 
     .dislike {
-
         color: #000;
         cursor: pointer;
         background: #f6f6f6;
@@ -53,9 +50,14 @@
     }
 
     .vote-container h4 {
-     
         color: #727E89;
         margin-bottom: 36px;
         font-size: 17px;
     
     }
+
+    .vote h4 {
+        color: #000000;
+        font-size: 16px;
+      
+    }    
