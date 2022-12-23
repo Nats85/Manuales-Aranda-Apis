@@ -8,30 +8,33 @@
     
     .container{
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 57%;
+        left: 28%;
         transform: translate(-50%, -50%);
     }
     
     .like, .dislike {
         display: inline-block;
-        margin-bottom: 0;
+        margin-bottom: 0px;
         font-weight: normal;
         text-align: center;
         vertical-align: middle;
         cursor: pointer;
-        background: #f6f6f6;
         border: 1px solid transparent;
         white-space: nowrap;
         padding: 6px 12px;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 1.428571429;
         border-radius: 4px;
+        color: #2099e8;
+        background-color: #fff;
+        border: 2px solid #2199e8;
+
     }
+    
     .qty1, .qty2 {
         border: none;
         width:20px;
         background: transparent;
     }
 
-      
