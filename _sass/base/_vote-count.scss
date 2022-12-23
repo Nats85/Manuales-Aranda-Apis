@@ -18,29 +18,28 @@
     
     }
     
-    .like, .dislike {
-        display: inline-block;
-        margin-bottom: 0px;
-        font-weight: normal;
-        text-align: center;
-        vertical-align: middle;
+    .like {
         cursor: pointer;
-        border: 1px solid transparent;
-        white-space: nowrap;
         padding: 6px 12px;
-        font-size: 18px;
-        line-height: 1.428571429;
-        border-radius: 4px;
         color: #2099e8;
-        background-color: #fff;
-        border: 2px solid #2199e8;
+
+    }
+
+    .dislike {
+        cursor: pointer;
+        padding: 6px 12px;
+        color: #de094f;
 
     }
 
     .qty1, .qty2 {
-        border: none;
-        width:20px;
-        background: transparent;
+        width: 49px;
+        background: white;
+        color: #2099e8;
+        background-color: #fff;
+        border: 0.5px solid #e9e6e6;
+        border-radius: 4px;
+   
     }
 
     .note-count {
