@@ -69,15 +69,15 @@ function handleCopyClick(evt) {
   alert(innerText)
 }
 // Vote Count
-function liked(heart){
-  heart.classList.toggle("liked");
-  if (heart.liked) {
-      click ++;
-  } else {
-      click --;
-  }
-  document.getElementById('clicks').innerHTML = click;
-} 
+$(function () {
+  $(".like").click(function () {
+      var input = $(this).find('.qty1');
+      input.val(parseInt(input.val())+ 1);
+
+  });
+
+});
+
 
 // Sidebar Button
 function sidebarButton() {
