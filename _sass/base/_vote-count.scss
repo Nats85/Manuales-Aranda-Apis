@@ -6,15 +6,15 @@
         height:100%;
     }
     
-    .container {
+    .vote-container {
      
-        padding: 0 300px 0 324px;
+        padding: 0 45px 0 44px;
         display: inline-block;
         background: #091f3e08;
         color: #727E89;
-        border-left: 4px solid #2099e8;
         margin-bottom: 36px;
         font-size: 22px;
+        border-radius: 4px;
     
     }
     
@@ -49,5 +49,13 @@
         padding: 4px 16px;
         margin-bottom: 36px;
         margin-top: 18px;
+    
+    }
+
+    .vote-container h4 {
+     
+        color: #727E89;
+        margin-bottom: 36px;
+        font-size: 17px;
     
     }
