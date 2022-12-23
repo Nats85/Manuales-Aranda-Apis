@@ -39,23 +39,13 @@
    
     }
 
-    .note-count {
-        color: #515151;
-        border-left: 4px solid #2099e8;
-        padding: 4px 16px;
-        margin-bottom: 36px;
-        margin-top: 18px;
-    
-    }
-
-    .vote-container h4 {
-        color: #727E89;
-        font-size: 17px;
-    
-    }
-
     .vote h4 {
-        color: #000000;
+        color: #2099e8;
         font-size: 16px;
+        margin-right: 30px;
       
+    }    
+    .sg-vote {
+        position: relative;
+
     }    
