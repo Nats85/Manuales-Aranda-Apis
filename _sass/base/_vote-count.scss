@@ -7,10 +7,10 @@
     }
     
     .container {
-
-        position: absolute;
-        margin: 0 auto;
-        padding: 0 300px 0 312px;
+     
+        padding: 0 300px 0 324px;
+        display: inline-block;
+     
     
     }
     
@@ -39,3 +39,12 @@
         background: transparent;
     }
 
+    .note-count {
+        background: #091f3e08;
+        color: #727E89;
+        border-left: 4px solid #2099e8;
+        padding: 4px 16px;
+        margin-bottom: 36px;
+        font-size: 22px;
+        margin-top: 46px;
+    }
