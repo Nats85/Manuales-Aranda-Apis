@@ -1,15 +1,13 @@
 blockquote {
+    border-left: 4px solid #f00;
+    border-color: $heading-font-color;
+    color: $heading-font-color;
+    background-color: #cecece42; 
     font-weight: normal;
     cursor: pointer;
     padding-bottom: 8px;
     font-size: 15px;
     line-height: 1.428571429;
     padding: 9px 12px;
-    color: #091f3e;
     font-weight: normal;
-}
-.NOTA { 
-    border-left: 4px solid #f00;
-    background-color:#f001; 
-    color: #f00; 
 }
