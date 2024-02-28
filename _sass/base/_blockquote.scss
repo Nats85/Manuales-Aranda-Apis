@@ -1,13 +1,4 @@
 blockquote {
-font-size: 14px;
-}
-.NOTA .blockquote{ 
-    border-left: 4px solid #f00;
-    background-color:#f001; 
-    color: #f00; 
-}
-.blockquote,
-h4 {
     font-weight: normal;
     cursor: pointer;
     padding-bottom: 8px;
@@ -18,4 +9,9 @@ h4 {
     padding: 9px 12px;
     color: #091f3e;
     font-weight: normal;
+}
+.NOTA .blockquote{ 
+    border-left: 4px solid #f00;
+    background-color:#f001; 
+    color: #f00; 
 }
