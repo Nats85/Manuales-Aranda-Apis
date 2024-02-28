@@ -1,13 +1,14 @@
 blockquote {
     border-left: 4px solid #f00;
-    border-color: $heading-font-color;
-    color: $heading-font-color;
-    background-color: $background-color-blockquote;
+    border-color: #079fa0;
+    color: #079fa0;
+    background-color: #079fa00d;
     font-weight: normal;
     cursor: pointer;
-    padding-bottom: 8px;
     font-size: 15px;
     line-height: 1.428571429;
-    padding: 9px 12px;
-    font-weight: normal;
+    padding: 18px 19px 1px 19px;
+    font-weight: lighter;
+    margin-left: 1px;
+    position: relative;
 }
