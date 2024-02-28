@@ -2,7 +2,7 @@ blockquote {
     border-left: 4px solid #f00;
     border-color: $heading-font-color;
     color: $heading-font-color;
-    background-color: #cecece42; 
+    background-color: $background-color-blockquote;
     font-weight: normal;
     cursor: pointer;
     padding-bottom: 8px;
