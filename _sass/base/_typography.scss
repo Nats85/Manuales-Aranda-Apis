@@ -14,20 +14,9 @@ table,fieldset,hr
   margin:0;
   margin-bottom: $margin;
 }
-.sg_masthead .title {
-    margin-top: 43px;
-}
-
-.blockquote {
-    margin-left: 0px;
-    margin-top: 55px;
-    margin-bottom: 55px;
-    color: #727e89;
-    font-size: 15px;
-}
 
 .header,
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
   line-height: $heading-line-height;
   margin-bottom: $margin;
   font-weight: 400;
@@ -38,20 +27,34 @@ h1 {
   color: $heading-font-color;
   font-size: $typo_ostrich;
 }
-h2,h3,h4,h5 {
+h2,h3,h5 {
   font-size: $typo_eagle;
 }
 
+h2 {
+ color: #425966;
+}
+    
+h3 {
+  font-size: $typo_crow;
+}
+h4 {
+    font-weight: normal;
+    cursor: pointer;
+    padding-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.428571429;
+    background: #f9c23c24;
+    border-left: 4px solid #f9b537;
+    padding: 9px 12px;
+    color: #091f3e;
+    font-weight: normal;
+}
 h6 {
-  color: #576574;
-  font-weight: 500;
-  border-left: 4px solid #06A1C6;
-  padding: 13px 16px;
-  background-color: #fcfcfc;
-  margin-bottom: 36px;
-  font-size: 1.5rem;
-  color: #06A1C6;
-
+    color: #091f3e;
+    margin-left: 16px;
+    font-size: 15px;
+    font-weight: normal;
 }
 h5 {
   font-size  : 14px;
@@ -70,7 +73,7 @@ h5 {
   h1 {
   font-size: $m_typo_ostrich;
   }
-  h2,h3,h4,h5 {
+  h2,h3,h5 {
     font-size: $m_typo_eagle;
   }
 }

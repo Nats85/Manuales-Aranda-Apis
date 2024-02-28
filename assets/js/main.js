@@ -1,6 +1,4 @@
 //-- enable javascript engine for the search control
-import { searchBar } from "./modules/SearchBar.js";
-import { ResultItem } from "./modules/ResultItem.js";
 const { jsPDF } = window.jspdf;
 // Create Content List
 function contentList() {
@@ -68,15 +66,6 @@ function handleCopyClick(evt) {
   // alert to show it worked, but you can put any kind of tooltip/popup to notify it worked
   alert(innerText)
 }
-// Vote Count
-$(function () {
-  $(".like").click(function () {
-      var input = $(this).find('.qty1');
-      input.val(parseInt(input.val())+ 1);
-
-  });
-
-});
 
 
 // Sidebar Button
@@ -87,6 +76,24 @@ function sidebarButton() {
     e.preventDefault();
     $(this).parents('.sg-pusher').toggleClass('show_sidebar');
   });
+}
+
+function outsideClickSidebar() {
+    $(document).mouseup(function (e) {
+        var container = $("#sgSidebar");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $(".sg-pusher").removeClass("show_sidebar");
+        }
+    });
+}
+
+function hideSidebar() {
+    var $button = $("#hideSidebarButton");
+
+    $button.click(function (e) {
+        e.preventDefault();
+        $(this).parents(".sg-pusher").toggleClass("show_sidebar");
+    });
 }
 
 // Maturity Count
@@ -159,4 +166,6 @@ $(document).ready(function () {
   collapseH();
   TargetExt();
   sidebarButton();
+  outsideClickSidebar();
+  hideSidebar();
 });

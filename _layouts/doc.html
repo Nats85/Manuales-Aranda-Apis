@@ -5,6 +5,7 @@ layout: default
 <header id="mastheadArea" class="sg_masthead">
     <div class="sg_contain">
         <div class="head">
+            {% include GA_Script.html %}
             <!--Buscador Aranda docs-->
             <div class="row no-gutters">
                 <!--<div class="col searchbar-container">
@@ -62,40 +63,7 @@ layout: default
 </header>
 
 <article id="documentationArea" class="sg_doc">
-    <div class="sg_contain" id="article-content">{{ content }}
-      <div class="sg-vote">{% include vote_count.html %}</div>
-    </div>
-    
+    <div class="sg_contain" id="article-content">{{ content }}</div>
 </article>
 
-<script>
-    /*  document.getElementById("searchbar").addEventListener("keyup", () => {
-        let searched = document.getElementById("searchbar").value;
-        let emptyList = document.getElementById("search_result");
-        let articles = [];
-
-        ("{% for article in site.pages %}");
-        if (JSON.parse("{{ article.tags | jsonify }}") !== null) {
-            JSON.parse("{{ article.tags | jsonify }}").map((string) => {
-                if (string.toLowerCase().includes(searched.toLowerCase())) {
-                    articles.push({
-                        title: "{{article.title}}",
-                        chapter: "{{article.chapter}}",
-                        url: "{{article.url}}",
-                    });
-                }
-            });
-        }
-        ("{%endfor%}");
-        let completeList = "";
-        let baseurl = "{{ site.baseurl }}";
-
-        articles.forEach(({ title, chapter, url }) => {
-            completeList += `<li><a href="${baseurl}${url}">${title} | ${chapter}</a></li>`;
-        });
-        if (searched === "") {
-            completeList = "";
-        }
-        emptyList.innerHTML = completeList;
-    }); */
-</script>
+<script></script>
