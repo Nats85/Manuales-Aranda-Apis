@@ -1,5 +1,6 @@
 <a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
-<div class="sg_sidebar">
+<div id="sgSidebar" class="sg_sidebar">
+  <p id="hideSidebarButton"  class="sg_sidebar_close_button"></p>
 
 
   <a href="{{ site.baseurl }}/index.html" class="logo">
@@ -8,6 +9,10 @@
   </a>
 
   {% if site.title contains "Release Notes" %}
+  <a href="https://docs.arandasoft.com/notes.html">Home</a></li>
+  {% elsif site.baseurl == "/database" %}
+  <a href="https://docs.arandasoft.com/notes.html">Home</a></li>
+  {% elsif site.title contains "Aranda Tools" %}
   <a href="https://docs.arandasoft.com/notes.html">Home</a></li>
   {% elsif site.title contains "API" %}
   <a href="https://docs.arandasoft.com/apis.html">Home</a></li>

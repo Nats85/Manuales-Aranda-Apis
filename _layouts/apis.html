@@ -5,6 +5,7 @@ layout: default
 <header id="mastheadArea" class="sg_masthead">
     <div class="sg_contain">
         <div class="head">
+            {% include GA_Script.html %}
             <!--Buscador Aranda docs-->
             <div class="row no-gutters">
                 <!--<div class="col searchbar-container">
@@ -63,8 +64,8 @@ layout: default
 <post id="documentationArea" class="sg_doc">
     <div class="sg_post" id="post-content">
         <div class="apis">
-            <div class="ap">{{ content }}</div></div>
-        <div class="sg-vote">{% include vote_count.html %}</div>
+            <div class="ap">{{ content }}</div>
+        </div>
     </div>
 </post>
 

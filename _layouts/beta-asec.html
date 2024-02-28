@@ -19,27 +19,26 @@ layout: default
                     <div id="search_result"></div>
                 </div>-->
 
-
-                <div class="col-auto">
+            <div class="col-auto">
                     <div class="pdf">
-                    <a
+                     <a
                         id="convertPDF"
                         class="mb-2 ml-5"
                         href="{{ site.baseurl }}/assets/{{site.baseurl | remove_first: '/'}}.pdf"
                         download
-                    >
+                      >
                         <img
                             src="{{ site.baseurl }}/assets/images/icon-pdf.svg"
                             width="64"
                             alt="Adobe PDF"
                             id="pdf-ic"
                         />
-                        <h1>Descargar PDF</h1>
-                    </a>
-                        
-                   </div>
-                 </div>    
-            </div> 
+                       <h1>Descargar PDF</h1>
+                     </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Adding result container -->
             <div class="row">
                 <ul id="result-box"></ul>
@@ -62,12 +61,13 @@ layout: default
     </div>
 </header>
 
-<post id="documentationArea" class="sg_doc">
+
+<article id="documentationArea" class="sg_doc">
     <div class="sg_post" id="post-content">
-      <div class="post">
-         <div class="ts">{{ content }}</div>  
+        <div class="notes">{% include beta-note-asec.html %}</div>
+        <div class="sg_contain" id="article-content">{{ content }}</div>
     </div>
-  </post>
+</article>
 
 <script>
     /* document.getElementById("searchbar").addEventListener("keyup", () => {
