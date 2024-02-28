@@ -178,7 +178,17 @@ body#sg {
     border-radius: 2px;
     color: currentColor;
 }
-
+.NOTA blockquote{ border-color:#f00; background-color:#f001; 
+}
+}
+blockquote .NOTA { border-color:#f00; background-color:#f001; 
+}
+blockquote.TIP { border-color:#0f0; background-color:#0f01; 
+}
+blockquote.IMPORTANTE { border-color:#00f; background-color:#00f1; 
+}
+blockquote.ATENCION { border-color:#f0f; background-color:#f0f1; 
+}
 .post ul {
     padding-bottom: 96px;
 }
