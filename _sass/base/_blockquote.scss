@@ -1,5 +1,4 @@
 blockquote {
-    border-left: 4px solid;
     font-weight: normal;
     cursor: pointer;
     font-size: 15px;
@@ -10,13 +9,15 @@ blockquote {
     position: relative;
     margin-right: 1px;
 }
-.alert blockquote {
+.alert  {
+    border-left: 4px solid;
     border-left-color: #EA0443;
     color: #FFDBE5;
     background-color: #FFDBE5;
     font-weight: normal;
 }
-.important blockquote {
+.important {
+    border-left: 4px solid;
     border-left-color: $base-font-color;
     color: #FFDBE5;
     background-color: $background-color-blockquote;
