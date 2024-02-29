@@ -9,7 +9,8 @@ blockquote {
     position: relative;
     margin-right: 1px;
 }
-.blockquote.alert  {
+.blockquote,
+alert  {
     border-left: 4px solid;
     border-left-color: #EA0443;
     color: #FFDBE5;
