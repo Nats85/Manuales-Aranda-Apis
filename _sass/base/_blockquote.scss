@@ -21,8 +21,8 @@ blockquote#alert {
 }
  blockquote#important{
     border-left: 4px solid;
-    border-left-color: $base-font-color;
-    color: $base-font-color;
+    border-left-color: $heading-font-color;
+    color: $heading-font-color;
     background-color: $background-color-blockquote;
     font-weight: normal;
 }
