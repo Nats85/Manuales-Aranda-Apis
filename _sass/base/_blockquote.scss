@@ -26,3 +26,11 @@ blockquote#alert {
     background-color: $background-color-blockquote;
     font-weight: normal;
 }
+ blockquote#related{
+    border-left: 4px solid;
+    border-left-color: #1e90ff;
+    color: #091f3e;
+    background-color: #1e90ff0a;
+    font-size: 15px;
+    font-weight: normal;
+}
