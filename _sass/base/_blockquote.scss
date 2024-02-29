@@ -10,13 +10,13 @@ blockquote {
     position: relative;
     margin-right: 1px;
 }
-.alert {
+.alert blockquote {
     border-left-color: #EA0443;
     color: #FFDBE5;
     background-color: #FFDBE5;
     font-weight: normal;
 }
-.important {
+.important blockquote {
     border-left-color: $base-font-color;
     color: #FFDBE5;
     background-color: $background-color-blockquote;
