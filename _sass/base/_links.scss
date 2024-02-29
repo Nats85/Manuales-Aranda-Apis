@@ -9,7 +9,7 @@ a {
 }
 
 a#back {
-    border: 1px solid #1f73b7 !important;
+    border-bottom: 1px solid #1f73b7 !important;
     background-color: white !important;
     font-size: 1rem;
     color: #1F73B7 !important;
@@ -25,5 +25,13 @@ a#back {
  }
 a#multi-language {
     border: 1px solid #5f5cf1 !important;
-    background-color: white !important;
+    background-color: #f3f3f5;
+    box-sizing: border-box;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 11px;
+    font-weight: 100;
 }
