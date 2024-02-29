@@ -1,8 +1,5 @@
 blockquote {
-    border-left: 4px solid #f00;
-    border-color: #079fa0;
-    color: #079fa0;
-    background-color: #079fa00d;
+    border-left: 4px;
     font-weight: normal;
     cursor: pointer;
     font-size: 15px;
@@ -15,9 +12,14 @@ blockquote {
 }
 
 .alert {
-    color: #091f3e;
-    margin-left: 16px;
-    font-size: 15px;
+    border-left-color: #EA0443;
+    color: #FFDBE5;
+    background-color: #FFDBE5;
     font-weight: normal;
-
+}
+.important {
+    border-left-color: $base-font-color;
+    color: #FFDBE5;
+    background-color: $background-color-blockquote;
+    font-weight: normal;
 }
