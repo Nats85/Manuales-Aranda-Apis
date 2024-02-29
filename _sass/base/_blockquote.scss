@@ -9,17 +9,17 @@ blockquote {
     position: relative;
     margin-right: 1px;
 }
-blockquote.alert {
+blockquote#alert {
     border-left: 4px solid;
     border-left-color: #EA0443;
-    color: #FFDBE5;
+    color: #EA0443;
     background-color: #FFDBE5;
     font-weight: normal;
 }
-.header, important {
+ blockquote#important{
     border-left: 4px solid;
     border-left-color: $base-font-color;
-    color: #FFDBE5;
+    color: $base-font-color;
     background-color: $background-color-blockquote;
     font-weight: normal;
 }
