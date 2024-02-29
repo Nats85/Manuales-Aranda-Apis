@@ -26,7 +26,8 @@ td {
     padding-left: 10px;
     padding-right: 30px;
 }
-table#back {
+table#back,
+td, th{
     border: 2px solid #abb2bf !important;
     background-color: white !important;
     font-size: 1rem;
