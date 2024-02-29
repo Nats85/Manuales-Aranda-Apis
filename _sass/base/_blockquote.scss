@@ -1,5 +1,5 @@
 blockquote {
-    border-left: 4px;
+    border-left: 4px solid;
     font-weight: normal;
     cursor: pointer;
     font-size: 15px;
@@ -10,7 +10,6 @@ blockquote {
     position: relative;
     margin-right: 1px;
 }
-
 .alert {
     border-left-color: #EA0443;
     color: #FFDBE5;
