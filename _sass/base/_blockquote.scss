@@ -16,7 +16,7 @@ blockquote {
     background-color: #FFDBE5;
     font-weight: normal;
 }
-.blockquote.important {
+ &.important {
     border-left: 4px solid;
     border-left-color: $base-font-color;
     color: #FFDBE5;
