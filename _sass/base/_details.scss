@@ -2,9 +2,9 @@ details {
     display: block;
     overflow: hidden;
     padding: 11px;
-    color: #8a5cf5;
-    background-color: #dfd1ff;
-    border-color: #079fa005;
+    border-left-color: $heading-font-color;
+    color: $heading-font-color;
+    background-color: $background-color-blockquote;
     border-style: solid;
     cursor: pointer;
     font-size: 16px;
