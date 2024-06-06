@@ -1,5 +1,4 @@
 details#product {
-    list-style-type: '❤️';
     display: block;
     overflow: hidden;
     color: $heading-font-color;
@@ -8,10 +7,6 @@ details#product {
     font-size: 16px;
     padding: 16px;
     border-radius: 3px;
-}
-summary#product {
-    display: list-item;
-    font-weight: 600;
 }
 details:focus#product  {
     border-bottom: 1px solid;
@@ -42,9 +37,9 @@ details:focus{
 summary::marker {
   color: #cad5da;
   font-size: 1em;
-  list-style-type: '❤️';  
 }
 summary {
     display: block;
     font-weight: 600;
+    list-style-type: '❤️';
 }
