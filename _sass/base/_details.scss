@@ -41,10 +41,12 @@ details:focus{
 summary::marker {
   color: #cad5da;
   font-size: 1em;
+  list-style-type: '❤️';  
 }
 summary {
     display: block;
     font-weight: 600;
+    list-style-type: '❤️';
 }
 img#product {
     filter: saturate(0.6);
