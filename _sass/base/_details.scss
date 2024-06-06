@@ -32,4 +32,9 @@ details#product {
   font-size: 16px;
   padding: 16px;
   border-radius: 3px;
-}  
+}
+details:hover#product {
+    
+  border-bottom: none;
+  background-color: none;
+}
