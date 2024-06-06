@@ -10,6 +10,7 @@ details#product {
 }
 summary#product {
     display: list-item;
+    font-weight: 600;
 }
 details:focus#product  {
     border-bottom: 1px solid;
@@ -43,4 +44,5 @@ summary::marker {
 }
 summary {
     display: block;
+    font-weight: 600;
 }
