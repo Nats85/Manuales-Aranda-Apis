@@ -17,6 +17,19 @@ details:focus {
   background-color: #f2fafa;
 }
 details:hover {
+    
   border-bottom: 1px solid;
   background-color: #f2fafa;
 }
+
+details#product {
+  display: block;
+  overflow: hidden;
+  padding: 11px;
+  color: #515151;
+  background-color: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 3px;
+}  
