@@ -33,12 +33,11 @@ details#product {
   padding: 16px;
   border-radius: 3px;
 }
-details:hover#product {
-    
+details:hover#product {  
   border-bottom: none;
-  background-color: none;
+  background-color: #ffffff;
 }
 details:focus#product {
   border-bottom: none;
-  background-color: none;
+  background-color: #ffffff;
 }
