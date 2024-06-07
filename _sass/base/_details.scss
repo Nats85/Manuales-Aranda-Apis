@@ -44,12 +44,12 @@ details:focus{
   background-color: #ffffff;
 }
 details summary {
-    display: block;
+    display: list-item;
     font-weight: 600;
     list-style-type: '⤏';
 }
 details#product summary {
-    display: block;
+    display: list-item;
     font-weight: 600;
     list-style-type: '💡';
 }
