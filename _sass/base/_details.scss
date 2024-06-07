@@ -41,11 +41,11 @@ details:focus{
 details summary::marker {
   color: #cad5da;
   font-size: 1em;
-  content: '↓';
+  content: '⇩';
 }
 summary {
   font-weight: 500;
 }
 details[open] summary::marker { 
-  content:"🡑"; 
+  content:"⇧"; 
 }
