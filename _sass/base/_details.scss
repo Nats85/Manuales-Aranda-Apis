@@ -34,7 +34,7 @@ details:focus{
   border-bottom: none;
   background-color: #ffffff;
 }
-details summary::marker {
+details#product summary::marker {
   /*color: #cad5da;*/
   font-size: 1em;
   content: '⇨';
