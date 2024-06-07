@@ -38,12 +38,17 @@ summary::marker {
   color: #cad5da;
   font-size: 1em;
 }
+details:focus{
+  border-bottom: none;
+  background-color: #ffffff;
+}
 summary {
     display: block;
     font-weight: 600;
     list-style-type: '❤️';
 }
-details#summary#product{
+summary_01 {
+    display: block;
     font-weight: 600;
     list-style-type: '💡';
 }
