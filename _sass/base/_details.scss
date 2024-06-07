@@ -35,25 +35,21 @@ details:focus{
   background-color: #ffffff;
 }
 summary::marker {
-  color: #cad5da;
+  /*color: #cad5da;*/
   font-size: 1em;
-  /*content: '📌';*/
+  content: '⇨';
 }
 details:focus{
   border-bottom: none;
   background-color: #ffffff;
 }
 details summary {
-    display: list-item;
+  /*display: list-item;
     font-weight: 600;
-    list-style-type: '⇨';
+    list-style-type: '⇨';*/
 }
 details#product summary {
     display: list-item;
     font-weight: 600;
     list-style-type: '💡';
-}
-details open summary{
-    font-weight: 600;
-    list-style-type: '⇩';
 }
