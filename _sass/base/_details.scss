@@ -42,10 +42,10 @@ details summary::marker {
   color: #cad5da;
   font-size: 1em;
   content: '⇩';
+  font-weight: 600;
 }
-summary {
-  font-weight: 500;
-}
+
 details[open] summary::marker { 
   content:"⇧"; 
+  font-weight: 600;  
 }
