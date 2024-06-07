@@ -37,19 +37,12 @@ details:focus{
 details#product summary::marker {
   /*color: #cad5da;*/
   font-size: 1em;
+  content: '💡';
+}
+details summary::marker {
+  /*color: #cad5da;*/
+  font-size: 1em;
   content: '⇨';
 }
-details:focus{
-  border-bottom: none;
-  background-color: #ffffff;
-}
-details summary {
-  /*display: list-item;
-    font-weight: 600;
-    list-style-type: '⇨';*/
-}
-details#product summary {
-    display: list-item;
-    font-weight: 600;
-    list-style-type: '💡';
-}
+
+
