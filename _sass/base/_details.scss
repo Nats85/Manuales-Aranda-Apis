@@ -43,5 +43,10 @@ details summary::marker {
   font-size: 1em;
   content: '⇨';
 }
+details summary::marker:open {
+  color: #cad5da;
+  font-size: 1em;
+  content: '⇨';
+}
 
 
