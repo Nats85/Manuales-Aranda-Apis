@@ -46,10 +46,14 @@ details:focus{
 details summary {
     display: list-item;
     font-weight: 600;
-    list-style-type: '⤏';
+    list-style-type: '⇨';
 }
 details#product summary {
     display: list-item;
     font-weight: 600;
     list-style-type: '💡';
+}
+details:open summary {
+    font-weight: 600;
+    list-style-type: '⇩';
 }
