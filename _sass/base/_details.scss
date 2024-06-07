@@ -53,7 +53,7 @@ details#product summary {
     font-weight: 600;
     list-style-type: '💡';
 }
-details summary::open {
+details summary#open {
     font-weight: 600;
     list-style-type: '⇩';
 }
