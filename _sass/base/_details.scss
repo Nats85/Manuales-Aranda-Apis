@@ -42,12 +42,12 @@ details:focus{
   border-bottom: none;
   background-color: #ffffff;
 }
-summary {
+summary::details#product {
     display: block;
     font-weight: 600;
     list-style-type: '❤️';
 }
-summary_01 {
+summary {
     display: block;
     font-weight: 600;
     list-style-type: '💡';
