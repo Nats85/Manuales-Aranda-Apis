@@ -41,12 +41,8 @@ details:focus{
 details summary::marker {
   color: #cad5da;
   font-size: 1em;
-  content: '⇨';
+  content: '➧';
 }
-details summary:open::marker {
-  color: #cad5da;
-  font-size: 1em;
-  content: '⇨';
-}
+
 
 
