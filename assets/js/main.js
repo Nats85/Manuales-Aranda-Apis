@@ -172,71 +172,85 @@ $(document).ready(function () {
 
 //-- Accordion (CSS Grid Version)
 
-(function () {
-  "use strict";
-  // https://youtu.be/RIuVdi2FlMM?t=2237
-  const MOVING_CLASS = "is-moving";
-  // https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaCurrent
-  const ACTIVE_ATTRIBUTE = "aria-current";
+$(function() {
 
-  /*
-  1. `aria-expanded` set to true []
-  2. `aria-hidden` remove
-  */
-
-  const list = document.getElementById("list");
-
-  list.addEventListener("click", onListClick);
-
-  function onListClick(e) {
-    const clickedItem = e.target;
-
-    const isTitleClicked = clickedItem.classList.contains("c-card__title") || clickedItem.classList.contains("c-card__toggle");
-
-    if (isTitleClicked === false) return;
-
-    const clickedListItem = clickedItem.closest(".c-list__item");
-
-    if (!clickedListItem) return;
-
-    const listItems = Array.from(list.children);
-
-    const isListItemOpen = clickedListItem.hasAttribute(ACTIVE_ATTRIBUTE) &&  clickedListItem.classList.contains(MOVING_CLASS);
-
-    listItems.forEach((listItem) => {
-      listItem.classList.remove(MOVING_CLASS);
-      _setAriaAttributesForListItem(listItem);
-    });
-
-    // list has already been open so we close it and don't continue any further
-    if (isListItemOpen) return;
-
-    _setAriaAttributesForListItem(clickedListItem, true);
-
-    for (let i = 0; i < listItems.length; i++) {
-      const listItem = listItems[i];
-      if (listItem === clickedListItem) {
-        clickedListItem.classList.add(MOVING_CLASS);
-        break;
-      }
-      listItem.classList.add(MOVING_CLASS);
-    }
-  }
-
-  /*Utility Functions*/
-  function _setAriaAttributesForListItem(listItem, isOpen = false) {
-    const toggleBtn = listItem.querySelector(".c-card__toggle");
-    const contentSection = listItem.querySelector(".c-card__content");
-
-    isOpen ? listItem.setAttribute("aria-current", "true") : listItem.removeAttribute("aria-current");
-
-    if (toggleBtn) {
-      toggleBtn.setAttribute("aria-expanded", isOpen);
-    }
-
-    if (contentSection) {
-      isOpen ? contentSection.removeAttribute("aria-hidden") : contentSection.setAttribute("aria-hidden", true);
-    }
-  };
+  // Set up variables
+  var $el, $parentWrap, $otherWrap, 
+      $allTitles = $("dt").css({
+          padding: 5, // setting the padding here prevents a weird situation, where it would start animating at 0 padding instead of 5
+          "cursor": "pointer" // make it seem clickable
+      }),
+      $allCells = $("dd").css({
+          position: "relative",
+          top: -1,
+          left: 0,
+          display: "none" // info cells are just kicked off the page with CSS (for accessibility)
+      });
   
-})();
+  // clicking image of inactive column just opens column, doesn't go to link   
+  $("#page-wrap").delegate(".image","click", function(e) { 
+      
+      if ( !$(this).parent().hasClass("curCol") ) {         
+          e.preventDefault(); 
+          $(this).next().find('dt:first').click(); 
+      } 
+      
+  });
+  
+  // clicking on titles does stuff
+  $("#page-wrap").delegate("dt", "click", function() {
+      
+      // cache this, as always, is good form
+      $el = $(this);
+      
+      // if this is already the active cell, don't do anything
+      if (!$el.hasClass("current")) {
+      
+          $parentWrap = $el.parent().parent();
+          $otherWraps = $(".info-col").not($parentWrap);
+          
+          // remove current cell from selection of all cells
+          $allTitles = $("dt").not(this);
+          
+          // close all info cells
+          $allCells.slideUp();
+          
+          // return all titles (except current one) to normal size
+          $allTitles.animate({
+              fontSize: "14px",
+              paddingTop: 5,
+              paddingRight: 5,
+              paddingBottom: 5,
+              paddingLeft: 5
+          });
+          
+          // animate current title to larger size            
+          $el.animate({
+              "font-size": "20px",
+              paddingTop: 10,
+              paddingRight: 5,
+              paddingBottom: 0,
+              paddingLeft: 10
+          }).next().slideDown();
+          
+          // make the current column the large size
+          $parentWrap.animate({
+              width: 320
+          }).addClass("curCol");
+          
+          // make other columns the small size
+          $otherWraps.animate({
+              width: 140
+          }).removeClass("curCol");
+          
+          // make sure the correct column is current
+          $allTitles.removeClass("current");
+          $el.addClass("current");  
+      
+      }
+      
+  });
+  
+  $("#starter").trigger("click");
+  
+});
