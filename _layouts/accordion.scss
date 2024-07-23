@@ -1,0 +1,247 @@
+:root {
+  --primary-color: hsla(210deg, 5%, 24%, 1);
+  --primary-color-light: hsla(210deg, 5%, 54%, 1);
+  --primary-color-lighter: hsla(210deg, 5%, 74%, 1);
+  --primary-body-bg-color: hsla(0, 0%, 99.5%, 1);
+  --white-bg-color: hsla(0, 0%, 100%, 1);
+}
+
+HTML {
+  height: 100%;
+  /*using system font-stack*/
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 115%; /*~18px*/
+/*   font-size: calc(20px + (30 - 20) * (100vw - 300px) / (1300 - 300) ); */
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+
+/* @media screen and (min-width: 1300px) {
+  HTML {
+    font-size: 30px;
+  }
+} */
+
+BODY {
+  display: flex;
+  flex-direction: column;
+/*   align-items: center; */
+/*   justify-content: flex-end; */
+  min-height: 100%;
+  margin: 0;
+  padding-top: 3rem;
+  color: var(--primary-color);
+  background-color: var(--primary-body-bg-color);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  color: inherit;
+}
+
+UL {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+H1, H2 {
+/*   margin: 0; */
+}
+
+/*Actual Style*/
+/*===================================
+  MAIN
+=====================================*/
+.c-main {
+  align-self: center;
+  width: 90%;
+  width: min(93%, 40rem);
+/*   border: 0.1em solid hsla(0, 60%, 80%, 1); */
+}
+
+/*===================================
+  LIST
+=====================================*/
+.c-list {
+  display: grid;
+  grid-template-rows: repeat(4, 3rem);
+  align-content: end;
+  height: 22rem; /*~400px*/
+  overflow: hidden;
+}
+
+/*===================================
+  LIST ITEM
+=====================================*/
+.c-list__item {
+  align-self: start;
+  position: relative;
+  background: hsla(0, 0%, 95%, 1);
+  border-radius: 0.4rem 0.4rem 0 0;
+  --list-background-hue: 70deg;
+  --list-background-lightness: 90%;
+  --list-background-saturation: 60%;
+  --list-background: hsla(var(--list-background-hue), var(--list-background-saturation), var(--list-background-lightness), 1);
+  background: var(--list-background);
+  box-shadow: 0px -2px 5px -1px hsla(0, 10%, 25%, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.c-list__item:hover,
+.c-list__item:focus-within {
+  transform: translateY(-5%);
+  transition-duration: 0.2s;
+}
+
+.c-list__item.is-moving {
+  transform: translateY(-75%);
+  transition: transform 0.3s ease-out;
+}
+
+.c-list__item:nth-child(2) {
+  --list-background-hue: 0;
+}
+
+.c-list__item:nth-child(3) {
+  --list-background-hue: 200;
+}
+
+.c-list__item:nth-child(4) {
+  --list-background-hue: 300;
+}
+
+/*===================================
+  CARD
+=====================================*/
+.c-card {
+
+}
+
+/*===================================
+  CARD HEADER
+=====================================*/
+.c-card__header {
+  position: relative;
+}
+
+/*===================================
+  CARD TOGGLE
+=====================================*/
+.c-card__toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  width: 1.65rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 0;
+  opacity: 0;
+  background: hsla(var(--list-background-hue), var(--list-background-saturation), 85%, 1);
+  pointer-events: none;
+  outline: 0.07em solid hsla(var(--list-background-hue), var(--list-background-saturation), 50%, 1);
+  outline-offset: 0.25em;
+  transition: opacity 0.4s ease-out;
+}
+
+.c-list__item:hover .c-card__toggle,
+.c-card__toggle:focus { 
+  opacity: 1;
+}
+
+.c-card__toggle:focus {
+  outline-offset: 0.05em;
+  transition: outline-offset 0.2s ease-out;
+}
+
+[aria-current] .c-card__toggle::after {
+  transform: translateY(20%) rotate(-45deg);
+}
+
+/*===================================
+  ICON CHEVRON
+=====================================*/
+.i-chevron {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.55s ease-out;
+}
+
+[aria-current] .i-chevron {
+  transform: translateY(10%) rotate3d(1, 0, 0, -0.5turn);
+}
+
+.i-chevron::after {
+  content: "";
+  width: 70%;
+  height: 47%;
+  border: 0.2em solid;
+  border-bottom: 0;
+  border-left: 0;
+  transform: translateY(30%) rotate(-45deg);
+}
+
+/*===================================
+  CARD TITLE
+=====================================*/
+.c-card__title {
+  margin: 0 -0.8rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/*===================================
+  CARD CONTENT
+=====================================*/
+.c-card__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 1rem;
+  padding: 0.7rem 0.7rem 0rem;
+  height: 11rem;
+  overflow: hidden;
+  --scrollbar-bg-lightness: 85%;
+  --scrollbar-hue-saturation: var(--list-background-hue), var(--list-background-saturation);
+  --scrollbar-bg: hsla(var(--scrollbar-hue-saturation), var(--scrollbar-bg-lightness), 1);
+  --scrollbar-thumb-bg: hsla(var(--scrollbar-hue-saturation), calc(var(--scrollbar-bg-lightness) - 20%), 1);
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
+}
+
+[aria-current] .c-card__content {
+  overflow: auto;
+}
+
+/*===================================
+  WEBKIT SCROLLBAR
+=====================================*/
+.c-card__content::-webkit-scrollbar {
+  width: 0.9em;
+}
+
+.c-card__content::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+.c-card__content::-webkit-scrollbar-thumb {
+  border-radius: 0.2em;
+  background: var(--scrollbar-thumb-bg);
+  background-image: linear-gradient(to right, transparent, hsla(0, 0%, 10%, 0.1));
+}
+
+/*===================================
+  CARD TEXT
+=====================================*/
+.c-card__text {
+  margin: 0;
+  padding-bottom: 1em;
+}
