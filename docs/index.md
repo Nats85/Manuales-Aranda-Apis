@@ -6,6 +6,7 @@ sidebar: docs
 redirect_from:
   - /docs/instalacion/
   - /docs/uso
+layout: beta-asec
 ---
 
 Ejemplo de un manual de los productos.
