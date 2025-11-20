@@ -166,6 +166,7 @@ body#sg {
 
 .post {
     align-items: baseline;
+    color: #576574;
     border-left: 4px solid #ff6d6d;
     font-weight: 500;
     padding: 10px 16px;
@@ -176,16 +177,6 @@ body#sg {
     font-weight: 300;
     border-radius: 2px;
     color: currentColor;
-}
-.NOTA blockquote{ 
-    border-left: 4px solid #f00;
-    background-color:#f001; 
-    color: #f00; 
-}
-blockquote .NOTA { 
-    border-left: 4px solid #f00;
-    background-color:#f001; 
-    color: #f00; 
 }
 .post ul {
     padding-bottom: 96px;
@@ -227,7 +218,6 @@ blockquote .NOTA {
     font-size: 14px;
 }
 .instal h1 {
-    color: #727e89;
     font-weight: 500;
     border-left: 4px solid #1aa99d;
     padding: 4px 16px;
@@ -236,7 +226,6 @@ blockquote .NOTA {
     margin-top: 46px;
 }
 .instal h2 {
-    color: #727e89;
     font-weight: 500;
     border-left: 4px solid #ff6d6d;
     padding: 4px 16px;
@@ -245,7 +234,6 @@ blockquote .NOTA {
     margin-top: 46px;
 }
 .instal h3 {
-    color: #727e89;
     font-weight: 500;
     border-left: 4px solid #f8d40e;
     padding: 4px 16px;
@@ -254,7 +242,6 @@ blockquote .NOTA {
     margin-top: 46px;
 }
 .instal h4 {
-    color: #727e89;
     font-weight: 500;
     margin-bottom: 36px;
     font-size: 22px;
